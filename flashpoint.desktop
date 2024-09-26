@@ -2,6 +2,6 @@
 Name=Flashpoint
 Type=Application
 Exec=/home/tsugu/Apps/Flashpoint/Flashpoint/start-flashpoint.sh
-Icon=/home/tsugu/Pictures/fp.jpg
+Icon=/home/tsugu/Pictures/fp.png
 Comment=Flash games BlueMaxima
 Terminal=false
