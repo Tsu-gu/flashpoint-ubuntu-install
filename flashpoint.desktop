@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Flashpoint
+Type=Application
+Exec=/home/tsugu/Apps/Flashpoint/Flashpoint/start-flashpoint.sh
+Icon=/home/tsugu/Pictures/fp.jpg
+Comment=Flash games BlueMaxima
+Terminal=false
