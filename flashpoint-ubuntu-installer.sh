@@ -14,7 +14,7 @@ sudo wget -O /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-bui
 sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/ubuntu/dists/$ubuntuversion/winehq-$ubuntuversion.sources
 sudo apt update
 sleep 1
-sudo apt install --install-recommends winehq-stable
+sudo apt install --install-recommends winehq-stable -y
 
 # Download and unzip flashpoint's file
 filename="fp13_linux_20240425m.7z" 
