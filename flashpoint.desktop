@@ -1,7 +1,9 @@
 [Desktop Entry]
 Name=Flashpoint
-Type=Application
-Exec=/home/tsugu/Apps/Flashpoint/Flashpoint/start-flashpoint.sh
+Comment=Launch flash games
+Keywords=calculation;arithmetic;scientific;financial;
+Exec=/home/tsugu/Flashpoint/Flashpoint/start-flashpoint.sh
 Icon=/home/tsugu/Pictures/fp.png
-Comment=Flash games BlueMaxima
 Terminal=false
+Type=Application
+StartupNotify=true
