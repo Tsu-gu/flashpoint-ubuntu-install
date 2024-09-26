@@ -5,13 +5,15 @@ ubuntuversion=$(cat /etc/os-release | grep "UBUNTU_CODENAME=" | sed 's/UBUNTU_CO
 
 # Dependencies
 sudo dpkg --add-architecture i386
-sudo apt install pulseaudio xserver-xorg-core libxcomposite1:i386 libgtk-3-0 libnss3 php p7zip
+sudo apt install libxcomposite1:i386 -y
+sudo apt install pulseaudio xserver-xorg-core libgtk-3-0 libnss3 php p7zip -y
 
 # Install Wine from their repo
 sudo mkdir -pm755 /etc/apt/keyrings
 sudo wget -O /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-builds/winehq.key
 sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/ubuntu/dists/$ubuntuversion/winehq-$ubuntuversion.sources
 sudo apt update
+sleep 1
 sudo apt install --install-recommends winehq-stable
 
 # Download and unzip flashpoint's file
