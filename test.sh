@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # Create a desktop entry
 wget https://raw.githubusercontent.com/Tsu-gu/flashpoint-ubuntu-install/main/fp.png
 mv fp.png $HOME/Pictures/
