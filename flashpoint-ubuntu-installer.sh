@@ -38,9 +38,7 @@ wget https://raw.githubusercontent.com/Tsu-gu/flashpoint-ubuntu-install/main/fp.
 mv fp.png $HOME/Pictures/
 wget https://raw.githubusercontent.com/Tsu-gu/flashpoint-ubuntu-install/main/1_flashpoint.desktop
 awk -v home="$HOME" '{gsub("/home/tsugu", home); print}' 1_flashpoint.desktop > flashpoint.desktop
-chmod 0444 $HOME/.local/share/applications/flashpoint.desktop
-gio set $HOME/.local/share/applications/flashpoint.desktop metadata::trusted true
-chmod +x $HOME/.local/share/applications/flashpoint.desktop
+gio set $HOME/Desktop/flashpoint.desktop metadata::trusted true
 rm 1_flashpoint.desktop
 read -p "Press Enter to close...."
 
