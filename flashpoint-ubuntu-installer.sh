@@ -36,7 +36,6 @@ chmod 0444 $HOME/.local/share/applications/flashpoint.desktop
 chmod +x $HOME/.local/share/applications/flashpoint.desktop
 gio set $HOME/.local/share/applications/flashpoint.desktop metadata::trusted true
 rm new_flashpoint.desktop
-rm flashpoint.desktop
 read -p "Press Enter to close...."
 
 
