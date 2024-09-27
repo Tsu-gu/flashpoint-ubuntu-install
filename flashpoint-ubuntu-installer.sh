@@ -14,7 +14,13 @@ sudo wget -O /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-bui
 sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/ubuntu/dists/$ubuntuversion/winehq-$ubuntuversion.sources
 sudo apt update
 sleep 1
-sudo apt install --install-recommends winehq-stable -y
+
+# Wine does not package stable releases for 24.04 yet.
+if [ "$ubuntuversion" == "noble" ]; then
+    sudo apt install --install-recommends winehq-devel -y
+else
+    sudo apt install --install-recommends winehq-stable -y
+fi
 
 # Download and unzip flashpoint's file
 filename="fp13_linux_20240425m.7z" 
