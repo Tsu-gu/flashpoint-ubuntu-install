@@ -3,6 +3,7 @@ Name=Flashpoint
 Comment=Launch flash games
 Keywords=calculation;arithmetic;scientific;financial;
 Exec=/home/tsugu/Flashpoint/Flashpoint/start-flashpoint.sh
+Path=/home/tsugu/Flashpoint/Flashpoint/
 Icon=/home/tsugu/Pictures/fp.png
 Terminal=false
 Type=Application
