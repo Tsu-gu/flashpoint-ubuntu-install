@@ -15,12 +15,12 @@ sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/debian/
 sudo apt update
 sleep 1
 
-# Wine does not package stable releases for 24.04 yet.
-if [ "$debianversion" == "trixie" ]; then
-    sudo apt install --install-recommends winehq-devel -y
-else
-    sudo apt install --install-recommends winehq-stable -y
-fi
+# Wine supports stable versions for Trixie as well, but I will leave this in just in case.
+# if [ "$debianversion" == "trixie" ]; then
+#   sudo apt install --install-recommends winehq-devel -y
+# else
+#   sudo apt install --install-recommends winehq-stable -y
+# fi
 
 # Download and unzip flashpoint's file
 filename="fp13_linux_20240425m.7z" 
