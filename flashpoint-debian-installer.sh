@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # discovers which ubuntu you are running
-debianversion=$(cat /etc/os-release | grep "VERSION_CODENAME=" | sed 's/VERSION_CODENAME=//' | sed 's/"//g')
+debianversion=$(cat /etc/os-release | grep "DEBIAN_CODENAME=" | sed 's/DEBIAN_CODENAME=//' | sed 's/"//g')
 
 # Dependencies
 sudo dpkg --add-architecture i386
