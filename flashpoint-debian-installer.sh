@@ -19,7 +19,7 @@ sleep 1
 # if [ "$debianversion" == "trixie" ]; then
 #   sudo apt install --install-recommends winehq-devel -y
 # else
-#   sudo apt install --install-recommends winehq-stable -y
+sudo apt install --install-recommends winehq-stable -y
 # fi
 
 # Download and unzip flashpoint's file
