@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# discovers which ubuntu you are running
+# discovers which debian you are running
 debianversion=$(cat /etc/os-release | grep "DEBIAN_CODENAME=" | sed 's/DEBIAN_CODENAME=//' | sed 's/"//g')
 
 # Dependencies
