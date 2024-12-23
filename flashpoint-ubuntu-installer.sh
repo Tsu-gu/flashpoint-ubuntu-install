@@ -22,6 +22,7 @@ else
     sudo apt install --install-recommends winehq-stable -y
 fi
 
+# Yes this is still current
 # Download and unzip flashpoint's file
 filename="fp13_linux_20240425m.7z" 
 wget https://download.unstable.life/upload/$filename
